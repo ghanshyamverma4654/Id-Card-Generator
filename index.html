@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="card.css"> -->
+    <link rel="shortcut icon" href="./image 02.jpeg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Card Generator</title>
+</head>
+<body>
+    <div class="form-container">
+        <form id="id-form" action="card.html">
+            <h2>ID Card Generator</h2>
+            <input type="text" id="user-name" placeholder="Name" required/>
+            <input type="date" id="dob" placeholder="Date of birth" required/>
+            <select name="gender" id="gen"required>
+                <option value="">Choose your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" id="fa-name" placeholder="Your Father's name" required/>
+            
+            <input type="text" id="vill" placeholder="Village" required/>
+            <input type="text" id="dis" placeholder="District" required/>
+            <select name="states" id="state" required>
+                <option value="">Please choose your state</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="AR">Arunachal Pradesh</option>
+                <option value="AS">Assam</option>
+                <option value="BR">Bihar</option>
+                <option value="CG">Chhattisgarh</option>
+                <option value="DL">Delhi</option>
+                <option value="GA">Goa</option>
+                <option value="GJ">Gujarat</option>
+                <option value="HR">Haryana</option>
+                <option value="HP">Himachal Pradesh</option>
+                <option value="JH">Jharkhand</option>
+                <option value="JH">Jammu & Kashmir</option>
+                <option value="KA">Karnataka</option>
+                <option value="KL">Kerala</option>
+                <option value="MP">Madhya Pradesh,</option>
+                <option value="MH">Maharashtra</option>
+                <option value="MN">Manipur</option>
+                <option value="ML">Meghalaya</option>
+                <option value="MZ">Mizoram</option>
+                <option value="NL">Nagaland</option>
+                <option value="OR">Odisha</option>
+                <option value="PB">Punjab</option>
+                <option value="RJ">Rajasthan</option>
+                <option value="SK">Sikkim</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="TL">Telangana</option>
+                <option value="TR">Tripura</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="UK">Uttarakhand</option>
+                <option value="WB">West Bengal</option>
+            </select>
+            <input type="text" id="pin" placeholder="Pincode" required>
+            <input type="tel" id="phone" placeholder="Phone" required>
+            <input type="file" title="Choose your picture on Id card" id="picture" class="pic" accept="image/*" required>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+
+        <!-- =============================================================== -->
+
+<div class="2-main">
+
+        <div class="card-main-container">
+            <div class="head-box">
+                <div class="hi-title">भारत सरकार</div>
+                <div class="en-title">Government of India</div>
+            </div>
+            <div class="inner-details">
+            <div class="p-image">
+                <img id="u-pic" alt="Pic">
+            </div>
+            <div class="detail-box">
+                <span id="u-name">Name</span>
+                <span id="u-dob">00/00/1010</span>
+                <span id="u-gender">M/F</span>
+                <span id="u-father">Father</span>
+                <span id="u-phone">1234567890</span>
+                <span id="u-adrs">Address</span>
+            </div>
+        </div>
+        </div>
+
+        <button id="download-pdf-btn">Download PDF</button>
+        <button id="download-img-btn">Download Image</button>
+        <p style="color: aliceblue;">&copy; Ghanshyam Verma aka ATLAS</p>
+
+    </div>
+         <!-- ==================================================================== -->
+    </div>
+   
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.form-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    /* flex-direction: row;*/
+    /* justify-content: space-between;  */
+    
+}
+h2{
+    color: rgb(0, 136, 255);
+    font-size: 1.7vw;
+}
+.form-container form{
+    margin: 2vw 0 0 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 90vh;
+    width: 38vw;
+    background-color: rgb(127, 255, 206);
+    border-radius: 10px;
+    
+}
+form input, select{
+    padding-left: 10px;
+    height: 5vw;
+    width: 30vw;
+    font-size: 1.2vw;
+    border-radius: 3px;
+    border: 2px solid cornflowerblue;
+    outline: none;
+
+}
+form select{
+    width: 31vw;
+    
+}
+
+form #picture{
+    border: none;
+    
+}
+form #submit{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 5vw;
+    width: 30vw;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: blue;
+}
+#submit:hover{
+    color: #fff;
+    background: #0d37f3a6;
+    border: 1.3px solid #fff;
+}
+
+/* =======================Card.CSS============================ */
+
+.card-main-container{
+    margin: 7vw;
+    height: 41vh;
+    width: 26vw;
+    background: linear-gradient(rgb(255, 119, 0), rgb(3, 125, 3));
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #dadada ;
+    border-radius: 5px;
+} 
+.head-box{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+    font-weight: 700;
+}
+.inner-details{
+    display: flex;
+    flex-direction: row;
+    row-gap: 1px;
+    justify-content: space-around;
+    height: 90%;
+    width: 100%;
+    margin-top: 35px;
+}
+.p-image{
+    margin: 35px 0 0 23px;
+    height: 95px;
+    width: 82px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.detail-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+    height: fit-content;
+    width: 64%;
+    margin-right: 12px;
+    padding: 0 0 0 49px;
+    /* background: #dadada; */
+
+}
+#u-pic{
+    height: 100%;
+    width: 100%;
+}
+.detail-box span{
+    font-weight: 500;
+}
+/* #btns{
+    display: flex;
+    flex-direction: column;
+} */
+#download-pdf-btn, #download-img-btn{
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
